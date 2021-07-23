@@ -42,7 +42,9 @@ bot.on('message', (msg) => {
                 parseFloat(s[0]),
                 parseFloat(s[1]),
                 parseFloat(s[2]),
-                parseFloat(s[3])
+                parseFloat(s[3]),
+                parseFloat(s[4]),
+                parseFloat(s[5])
             ]
          ).then((jres)=>{
             bot.sendMessage(
