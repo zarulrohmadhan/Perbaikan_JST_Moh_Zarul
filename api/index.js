@@ -6,7 +6,7 @@ const model = require('./sdk/model.js');
 
 // Bot Setting
 const TelegramBot = require('node-telegram-bot-api');
-const token = '1801727828:AAHncjz56vZ44m_va6vYGBaefUHLMWBHfP0'
+const token = '1922840497:AAHBj0K4cCoaIV1Rh4tU6q7gESc55NVR-68'
 const bot = new TelegramBot(token, {polling: true});
 
 
@@ -42,9 +42,7 @@ bot.on('message', (msg) => {
                 parseFloat(s[0]),
                 parseFloat(s[1]),
                 parseFloat(s[2]),
-                parseFloat(s[3]),
-                parseFloat(s[4]),
-                parseFloat(s[5])
+                parseFloat(s[3])
             ]
          ).then((jres)=>{
             bot.sendMessage(
