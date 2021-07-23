@@ -82,7 +82,7 @@ r.get('/prediction/:x1/:x2/:x3/:x4', function(req, res, next) {
             parseFloat(req.params.x1), // string to float
             parseFloat(req.params.x2),
             parseFloat(req.params.x3),
-            parseFloat(req.params.x4),
+            parseFloat(req.params.x4)
         ]
     ).then((jres)=>{
         res.json(jres);
