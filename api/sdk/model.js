@@ -29,7 +29,7 @@ async function predict(data){
     tf_data = tf.tensor2d(data, shape);
 
     try{
-        // path load in public access => github
+        // path load in public access => github 
         const path = 'https://raw.githubusercontent.com/zarulrohmadhan/Perbaikan_JST_Moh_Zarul/main/public/perbaikan_JST_MohZarul_model/model.json';
         const model = await tf.loadGraphModel(path);
         
